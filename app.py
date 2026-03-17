@@ -4,10 +4,9 @@ import streamlit as st
 
 from app_runner import run_link_checker
 
-st.markdown("<br><br>", unsafe_allow_html=True)
 st.set_page_config(page_title="Broken Link Checker", layout="wide")
 
-col1, col2, col3 = st.columns([4,2,1])
+col1, col2, col3 = st.columns([4, 2, 1])
 
 with col1:
     st.markdown("<br><br>", unsafe_allow_html=True)
@@ -19,9 +18,6 @@ with col2:
         "https://www.marian.edu/images/default-source/_logos/marian-university-logo.png?sfvrsn=0&MaxWidth=100&MaxHeight=100&ScaleUp=false&Quality=High&Method=ResizeFitToAreaArguments&Signature=0B8446F612A6F807C9682F238368F952",
         width=200
     )
-
-
-import streamlit as st
 
 def check_password():
     correct_password = st.secrets["LINK_CHECKER_PASSWORD"]
