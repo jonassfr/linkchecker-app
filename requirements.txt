@@ -5,4 +5,5 @@ pyyaml
 tqdm
 lxml
 psutil
-streamlit
+streamlit==1.32.2
+altair<5
